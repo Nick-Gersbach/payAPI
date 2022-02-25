@@ -1,0 +1,606 @@
+/* 
+
+Fonts: 
+
+font-family: 'DM Serif Display', serif;
+font-family: 'Public Sans', sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: "Public Sans", sans-serif;
+}
+
+body {
+  background-color: #eef3f9;
+}
+
+.mobile-nav-logo {
+  display: none;
+}
+
+.mobile-nav-btn {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 
+
+
+
+
+
+
+
+Header
+
+
+
+
+
+
+*/
+
+header {
+  margin: 0 auto;
+  background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 55vw -30vh;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  width: 85%;
+  margin: auto;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul li a {
+  padding: 20px;
+  color: #36536b;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+  opacity: 1;
+}
+
+.demo-btn button {
+  border: none;
+  background: #ba4270;
+  color: #fbfcfe;
+  padding: 10px;
+  width: 150px;
+  border-radius: 24px;
+  box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25);
+}
+
+.demo-btn button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#header-showcase {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+}
+
+#header-showcase .header-showcase-text {
+  color: #36536b;
+  font-weight: 400;
+  font-size: 72px;
+  font-family: "DM Serif Display", serif;
+  line-height: 72px;
+  width: 80%;
+}
+
+#header-showcase .header-showcase-text h1 {
+  color: #36536b;
+  font-weight: 400;
+  font-size: 72px;
+  font-family: "DM Serif Display", serif;
+  line-height: 72px;
+  width: 80%;
+}
+
+#header-showcase .header-showcase-text form {
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+*:focus {
+  outline: none;
+}
+
+#header-showcase .header-showcase-text form input {
+  border: none;
+  border-radius: 24px;
+  padding: 10px;
+  width: 400px;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+#header-showcase .header-showcase-text p {
+  font-size: 15px;
+  opacity: 0.7;
+  color: #36536b;
+  margin-top: 0rem;
+  padding-left: 1rem;
+}
+#header-showcase .header-showcase-text p a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #36536b;
+}
+
+#header-showcase .header-showcase-text form button {
+  border: none;
+  background: #ba4270;
+  color: #fbfcfe;
+  padding: 10px;
+  width: 150px;
+  border-radius: 24px;
+  box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25);
+  margin-left: -9rem;
+}
+#header-showcase .header-showcase-text form button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* 
+
+
+
+
+
+
+
+Who We Work With
+
+
+
+
+
+
+*/
+
+#who-we-work-with {
+  margin-top: 2rem;
+  background-color: #1b262f;
+  height: 450px;
+  background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: -8vw -43vh;
+}
+
+#who-we-work-with .work-with-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+#who-we-work-with .work-with-content-container .who-we-work-with-text {
+  width: 50%;
+}
+#who-we-work-with .work-with-content-container .who-we-work-with-text h2 {
+  font-family: "DM Serif Display", serif;
+  color: #fbfcfe;
+  font-size: 48px;
+  padding-bottom: 1.5rem;
+}
+#who-we-work-with .work-with-content-container .who-we-work-with-text p {
+  font-family: "Public Sans", sans-serif;
+  color: #fbfcfe;
+  font-size: 15px;
+  line-height: 28px;
+  opacity: 0.7;
+  width: 70%;
+}
+
+#who-we-work-with
+  .work-with-content-container
+  .who-we-work-with-text
+  .about-us-btn-container {
+  margin-top: 3rem;
+}
+#who-we-work-with
+  .work-with-content-container
+  .who-we-work-with-text
+  .about-us-btn {
+  font-family: "Public Sans", sans-serif;
+  color: #fbfcfe;
+  font-size: 15px;
+  border: 1px solid #fbfcfe;
+  border-radius: 24px;
+  background: #1b262f;
+  padding: 15px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+#who-we-work-with
+  .work-with-content-container
+  .who-we-work-with-text
+  .about-us-btn:hover {
+  background: #fbfcfe;
+  color: #1b262f;
+}
+
+#who-we-work-with .work-with-content-container .who-we-work-with-companies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.who-we-work-with-companies img {
+  filter: invert(87%) sepia(27%) saturate(12%) hue-rotate(182deg)
+    brightness(107%) contrast(100%);
+}
+
+/* 
+
+
+
+
+
+
+
+Media Queries
+
+
+
+
+
+
+*/
+
+/* 
+
+
+
+
+
+
+
+Tablet
+
+
+
+
+
+
+*/
+
+@media only screen and (max-width: 1024px) {
+  header {
+    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 50vw -34vh;
+  }
+
+  #header-showcase {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #header-showcase .header-showcase-text {
+    text-align: center;
+    margin-top: -4rem;
+  }
+
+  #header-showcase .header-showcase-text h1 {
+    font-size: 48px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
+  #header-showcase .header-showcase-text form {
+    margin-top: 0rem;
+  }
+
+  #who-we-work-with {
+    height: 630px;
+    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 11vw -72vh;
+  }
+
+  #who-we-work-with .work-with-content-container {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  #who-we-work-with .work-with-content-container .who-we-work-with-text {
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #who-we-work-with .work-with-content-container .who-we-work-with-text p {
+    margin: auto;
+  }
+
+  #who-we-work-with .work-with-content-container .who-we-work-with-companies {
+    margin-bottom: 3rem;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+Smartphone Landscape
+
+
+
+
+
+
+*/
+
+@media only screen and (max-width: 968px) {
+  header {
+    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: -1vw -33vh;
+  }
+
+  #header-showcase {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #header-showcase .header-showcase-text {
+    text-align: center;
+    margin-top: -4rem;
+  }
+
+  #header-showcase .header-showcase-text h1 {
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  #header-showcase .header-showcase-text form {
+    margin-top: 0rem;
+  }
+
+  #who-we-work-with .work-with-content-container .who-we-work-with-text {
+    width: 80%;
+  }
+
+  #who-we-work-with {
+    height: 700px;
+    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: -2vw -53vh;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+Smartphone Portrait
+
+
+
+
+
+
+*/
+
+@media only screen and (max-width: 600px) {
+  .mobile-nav-logo {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #1b262f;
+    color: #fbfcfe;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    transform: translateX(1000px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mobile-nav.show {
+    transform: translateX(0px);
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  .divider {
+    border-bottom: 1px solid #6c8294;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4.5rem;
+  }
+
+  .mobile-nav li {
+    margin-top: 2rem;
+  }
+
+  .mobile-nav li a {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .mobile-demo-btn a {
+    background: #da6d97;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+
+  .nav-menu img {
+    display: none;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  .demo-btn button {
+    display: none;
+  }
+
+  header {
+    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: -58vw -65vh;
+  }
+
+  #header-showcase {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #header-showcase .header-showcase-text {
+    text-align: center;
+    margin-top: -4rem;
+  }
+
+  #header-showcase .header-showcase-text h1 {
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  #header-showcase .header-showcase-text form {
+    margin-top: -2rem;
+    display: block;
+  }
+
+  #header-showcase .header-showcase-text form input {
+    width: 100%;
+  }
+
+  #header-showcase .header-showcase-text p {
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 0rem;
+  }
+  #header-showcase .header-showcase-text p a {
+    font-size: 12px;
+  }
+
+  #header-showcase .header-showcase-text form button {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .header-showcase-img img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: 2.4rem;
+  }
+
+  #who-we-work-with .work-with-content-container {
+    width: 90%;
+  }
+
+  #who-we-work-with .work-with-content-container .who-we-work-with-text {
+    width: 90%;
+  }
+
+  #who-we-work-with .work-with-content-container .who-we-work-with-text h2 {
+    font-size: 32px;
+  }
+  #who-we-work-with .work-with-content-container .who-we-work-with-text p {
+    width: 95%;
+  }
+
+  #who-we-work-with {
+    height: 750px;
+    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: -2vw -53vh;
+  }
+
+  #who-we-work-with .work-with-content-container .who-we-work-with-companies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
