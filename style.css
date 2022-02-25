@@ -469,12 +469,12 @@ Smartphone Portrait
     width: 100%;
     text-align: center;
     height: 100vh;
-    transform: translateX(1000px);
+    transform: translateX(-1000px);
     transition: transform 0.3s ease-in-out;
   }
 
   .mobile-nav.show {
-    transform: translateX(0px);
+    transform: translateX(-20px);
   }
 
   .close-menu {
