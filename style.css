@@ -470,7 +470,7 @@ Smartphone Portrait
     text-align: center;
     height: 100vh;
     transform: translateX(-1000px);
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.8s ease-in-out;
   }
 
   .mobile-nav.show {
