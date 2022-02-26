@@ -333,6 +333,45 @@ Easy to Implement
 
 
 
+Simple UI
+
+
+
+
+
+
+*/
+
+#simple-ui {
+  background-image: url(./img/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 63vw 0vh;
+}
+
+#simple-ui .simple-ui-container {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+}
+#simple-ui .simple-ui-container .simple-ui-text h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 48px;
+  margin-bottom: 1rem;
+  color: #36536b;
+}
+
+/* 
+
+
+
+
+
+
+
 Media Queries
 
 
@@ -444,6 +483,31 @@ Tablet
     margin-left: auto;
     margin-right: auto;
   }
+
+  #simple-ui {
+    background-image: none;
+    margin-top: 4rem;
+  }
+
+  #simple-ui .simple-ui-container {
+    padding-left: 3rem;
+    flex-direction: column-reverse;
+  }
+  #simple-ui .simple-ui-container .simple-ui-text {
+    text-align: center;
+  }
+
+  #simple-ui .simple-ui-container .simple-ui-text h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 48px;
+    margin-bottom: 1rem;
+    color: #36536b;
+  }
+
+  #simple-ui .simple-ui-container .simple-ui-text p {
+    margin: 0 auto;
+    width: 65%;
+  }
 }
 
 /* 
@@ -501,6 +565,28 @@ Smartphone Landscape
     background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: -2vw -53vh;
+  }
+
+  #simple-ui {
+    background-image: none;
+    margin-top: 4rem;
+  }
+
+  #simple-ui .simple-ui-container {
+    padding-left: 3rem;
+    flex-direction: column-reverse;
+  }
+  #simple-ui .simple-ui-container .simple-ui-text {
+    text-align: center;
+    margin-top: -3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 3rem;
+  }
+
+  #simple-ui .simple-ui-container .simple-ui-text p {
+    margin: 0 auto;
+    width: 85%;
   }
 }
 
@@ -707,6 +793,36 @@ Smartphone Portrait
   }
 
   #easy-to-implement .easy-to-implement-text p {
+    width: 100%;
+  }
+
+  #simple-ui {
+    background-image: none;
+  }
+
+  #simple-ui .simple-ui-container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+  }
+  #simple-ui .simple-ui-container .simple-ui-text h2 {
+    font-size: 32px;
+    margin-top: 2rem;
+  }
+
+  #simple-ui .simple-ui-container .simple-ui-text p {
+    width: 100%;
+  }
+
+  #simple-ui .simple-ui-container .simple-ui-img {
+    padding-right: 2rem;
+  }
+
+  #simple-ui .simple-ui-container .simple-ui-img img {
     width: 100%;
   }
 }
