@@ -372,6 +372,46 @@ Simple UI
 
 
 
+Benefits
+
+
+
+
+
+
+*/
+
+#benefits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefit {
+  text-align: center;
+  padding: 0 2rem;
+}
+.benefit img {
+  margin-bottom: 1rem;
+}
+.benefit h3 {
+  margin-bottom: 1rem;
+  font-size: 18px;
+  color: #36536b;
+}
+
+/* 
+
+
+
+
+
+
+
 Media Queries
 
 
@@ -587,6 +627,25 @@ Smartphone Landscape
   #simple-ui .simple-ui-container .simple-ui-text p {
     margin: 0 auto;
     width: 85%;
+  }
+
+  #benefits {
+    flex-direction: column;
+    width: 85%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .benefit {
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 3rem;
+  }
+
+  .benefit p {
+    margin: auto;
+    width: 70%;
   }
 }
 
@@ -823,6 +882,25 @@ Smartphone Portrait
   }
 
   #simple-ui .simple-ui-container .simple-ui-img img {
+    width: 100%;
+  }
+
+  #benefits {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .benefit {
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 3rem;
+  }
+
+  .benefit p {
+    margin: auto;
     width: 100%;
   }
 }
