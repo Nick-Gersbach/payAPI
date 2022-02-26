@@ -412,6 +412,63 @@ Benefits
 
 
 
+Ready to Start
+
+
+
+
+
+
+*/
+
+#ready-to-start {
+  margin-top: 7rem;
+  padding-bottom: 5rem;
+}
+#ready-to-start h2 {
+  font-size: 48px;
+  color: #36536b;
+  text-align: center;
+}
+
+.ready-to-start-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.ready-to-start-input {
+  border: none;
+  border-radius: 24px;
+  padding: 10px;
+  width: 450px;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.ready-to-start-btn {
+  border: none;
+  background: #ba4270;
+  color: #fbfcfe;
+  padding: 10px;
+  width: 150px;
+  border-radius: 24px;
+  box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25);
+  margin-left: -9rem;
+}
+.ready-to-start-btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* 
+
+
+
+
+
+
+
 Media Queries
 
 
@@ -902,5 +959,41 @@ Smartphone Portrait
   .benefit p {
     margin: auto;
     width: 100%;
+  }
+
+  #ready-to-start {
+    margin-top: 7rem;
+    padding-bottom: 5rem;
+  }
+  #ready-to-start h2 {
+    font-size: 32px;
+    color: #36536b;
+    text-align: center;
+  }
+
+  .ready-to-start-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .ready-to-start-input {
+    border: none;
+    border-radius: 24px;
+    padding: 10px;
+    width: 90%;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  }
+
+  .ready-to-start-btn {
+    border: none;
+    background: #ba4270;
+    color: #fbfcfe;
+    padding: 10px;
+    width: 150px;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25);
+    margin-left: -9rem;
   }
 }
