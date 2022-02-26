@@ -45,6 +45,12 @@ a {
   color: black;
 }
 
+p {
+  font-size: 15px;
+  opacity: 0.7;
+  color: #36536b;
+}
+
 /* 
 
 
@@ -64,7 +70,7 @@ Header
 
 header {
   margin: 0 auto;
-  background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+  background-image: url(./img/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
   background-position: 55vw -30vh;
   width: 100%;
@@ -205,7 +211,7 @@ Who We Work With
   margin-top: 2rem;
   background-color: #1b262f;
   height: 450px;
-  background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+  background-image: url(./img/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
   background-position: -8vw -43vh;
 }
@@ -285,6 +291,48 @@ Who We Work With
 
 
 
+Easy to Implement
+
+
+
+
+
+
+*/
+
+#easy-to-implement {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#easy-to-implement .easy-to-implement-text {
+  margin-bottom: 4rem;
+}
+
+#easy-to-implement .easy-to-implement-text h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 48px;
+  margin-bottom: 1rem;
+  color: #36536b;
+}
+
+#easy-to-implement .easy-to-implement-text p {
+  width: 70%;
+}
+
+/* 
+
+
+
+
+
+
+
 Media Queries
 
 
@@ -313,7 +361,7 @@ Tablet
 
 @media only screen and (max-width: 1024px) {
   header {
-    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: 50vw -34vh;
   }
@@ -342,7 +390,7 @@ Tablet
 
   #who-we-work-with {
     height: 630px;
-    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: 11vw -72vh;
   }
@@ -366,6 +414,36 @@ Tablet
   #who-we-work-with .work-with-content-container .who-we-work-with-companies {
     margin-bottom: 3rem;
   }
+
+  #easy-to-implement {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  #easy-to-implement .implement-img {
+    margin-left: 3rem;
+  }
+
+  #easy-to-implement .easy-to-implement-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0rem;
+    margin-top: -4rem;
+  }
+
+  #easy-to-implement .easy-to-implement-text h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 48px;
+    margin-bottom: 1rem;
+    color: #36536b;
+  }
+
+  #easy-to-implement .easy-to-implement-text p {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* 
@@ -387,7 +465,7 @@ Smartphone Landscape
 
 @media only screen and (max-width: 968px) {
   header {
-    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: -1vw -33vh;
   }
@@ -420,7 +498,7 @@ Smartphone Landscape
 
   #who-we-work-with {
     height: 700px;
-    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: -2vw -53vh;
   }
@@ -521,7 +599,7 @@ Smartphone Portrait
   }
 
   header {
-    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: -58vw -65vh;
   }
@@ -593,7 +671,7 @@ Smartphone Portrait
 
   #who-we-work-with {
     height: 750px;
-    background-image: url(./starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+    background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: -2vw -53vh;
   }
@@ -602,5 +680,33 @@ Smartphone Portrait
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+  }
+
+  #easy-to-implement {
+    width: 90%;
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+
+  #easy-to-implement .implement-img {
+    margin-left: 2.5rem;
+    text-align: center;
+  }
+
+  #easy-to-implement .implement-img img {
+    margin: auto;
+    width: 100%;
+  }
+
+  #easy-to-implement .easy-to-implement-text {
+    margin-top: -2rem;
+  }
+
+  #easy-to-implement .easy-to-implement-text h2 {
+    font-size: 36px;
+  }
+
+  #easy-to-implement .easy-to-implement-text p {
+    width: 100%;
   }
 }
