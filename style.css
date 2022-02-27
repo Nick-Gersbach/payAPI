@@ -743,7 +743,7 @@ Tablet
   }
 
   #pricing {
-    padding-left: 0rem;
+    padding-left: 3rem;
   }
 
   .page-heading {
@@ -873,12 +873,56 @@ Smartphone Landscape
   }
 
   #pricing {
-    padding-left: 0rem;
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    padding-left: 0rem;
+  }
+  #pricing .text-and-price h3 {
+    text-align: center;
+  }
+  #pricing .text-and-price p {
+    text-align: center;
+    margin: auto;
   }
 
-  #pricing .text-and-price h3 {
-    padding-top: 2rem;
+  .price {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .plan-features {
+    margin-top: 2rem;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature img {
+    padding-right: 15px;
+  }
+
+  .feature p {
+    margin-top: 10px;
+  }
+
+  .divider {
+    margin: auto;
+  }
+
+  .request-access-btn-container {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 0rem;
   }
 }
 /* 
@@ -1192,30 +1236,30 @@ Smartphone Portrait
     transition: opacity 0.3s ease-in-out;
   }
   #pricing {
-    width: 85%;
-    margin-top: 5rem;
+    width: 100%;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 5rem;
+    flex-direction: column;
+    padding-left: 0rem;
   }
   #pricing .text-and-price h3 {
-    font-family: "DM Serif Display", serif;
-    color: #ba4270;
-    font-size: 32px;
-    padding-bottom: 0.8rem;
+    text-align: center;
   }
   #pricing .text-and-price p {
     width: 85%;
     padding-bottom: 0.8rem;
+    text-align: center;
+    margin: auto;
   }
 
   .price {
-    font-family: "DM Serif Display", serif;
-    color: #36536b;
-    font-size: 56px;
+    text-align: center;
+    margin-bottom: -3rem;
+  }
+
+  .plan-features {
+    margin-top: 2rem;
   }
 
   .feature {
@@ -1225,22 +1269,23 @@ Smartphone Portrait
   }
 
   .feature img {
-    padding-right: 15px;
+    position: absolute;
+    left: 90px;
   }
 
   .feature p {
-    margin-top: 10px;
+    padding-top: 15px;
   }
 
   .divider {
-    border-bottom: 1px solid #6c8294;
-    width: 250px;
-    opacity: 0.9;
+    margin: auto;
   }
 
   .request-access-btn-container {
     margin-top: 2rem;
-    margin-left: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 
   .request-access-btn {
