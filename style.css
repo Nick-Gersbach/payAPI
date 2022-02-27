@@ -479,14 +479,13 @@ Footer
 */
 
 footer {
-  background-color: #1b262f;
-  padding: 3rem 0;
+  width: 100%;
+  background: #1b262f;
+  padding: 3rem 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
-
 footer ul {
   display: flex;
   align-items: center;
@@ -501,19 +500,10 @@ footer ul li a:hover {
   opacity: 0.8;
 }
 
-.footer-nav {
-  padding-left: 2rem;
-}
-
-.footer-icons {
-  padding-right: 2rem;
-}
-
 .footer-logo {
   filter: invert(87%) sepia(27%) saturate(12%) hue-rotate(182deg)
     brightness(107%) contrast(100%);
 }
-
 /* 
 
 
@@ -549,6 +539,9 @@ Tablet
 */
 
 @media only screen and (max-width: 1024px) {
+  * {
+    border: 1px solid red;
+  }
   header {
     background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
@@ -678,10 +671,17 @@ Smartphone Landscape
 */
 
 @media only screen and (max-width: 968px) {
+  * {
+    border: 1px solid red;
+  }
   header {
     background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: -1vw -33vh;
+  }
+
+  header nav {
+    width: 100%;
   }
 
   #header-showcase {
@@ -706,13 +706,15 @@ Smartphone Landscape
     margin-top: 0rem;
   }
 
+  .demo-btn button {
+    width: 150px;
+  }
   #who-we-work-with .work-with-content-container .who-we-work-with-text {
     width: 80%;
   }
 
   #who-we-work-with {
     height: 700px;
-    width: 115%;
     background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: -2vw -53vh;
@@ -740,6 +742,10 @@ Smartphone Landscape
     width: 85%;
   }
 
+  .simple-ui-img img {
+    width: 100%;
+  }
+
   #benefits {
     flex-direction: column;
     width: 85%;
@@ -759,7 +765,15 @@ Smartphone Landscape
     width: 70%;
   }
   footer {
-    width: 115%;
+    padding: 3rem 4rem;
+
+    justify-content: center;
+  }
+  footer ul {
+    justify-content: center;
+  }
+  footer ul li a {
+    padding: 0 10px;
   }
 }
 /* 
@@ -780,6 +794,9 @@ Smartphone Portrait
 */
 
 @media only screen and (max-width: 600px) {
+  * {
+    border: 1px solid red;
+  }
   .mobile-nav-logo {
     display: block;
     position: absolute;
@@ -1054,30 +1071,22 @@ Smartphone Portrait
   }
 
   footer {
-    justify-content: center;
     width: 100%;
+    background: #1b262f;
+    padding: 3rem 4rem;
     flex-direction: column;
-  }
-
-  footer ul {
     justify-content: center;
+  }
+  footer ul {
     flex-direction: column;
-    padding: 10px 0;
+    justify-content: center;
   }
   footer ul li {
-    padding: 10px 0;
+    padding: 0 10px;
   }
-
-  .footer-nav {
-    padding-left: 0rem;
-  }
-
-  .footer-icons {
-    padding-right: 0rem;
-  }
-
-  .footer-logo {
-    filter: invert(87%) sepia(27%) saturate(12%) hue-rotate(182deg)
-      brightness(107%) contrast(100%);
+  footer ul li a {
+    padding: 0 8px;
+    color: #fbfcfe;
+    transition: opacity 0.3s ease-in-out;
   }
 }
