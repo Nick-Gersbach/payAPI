@@ -469,6 +469,55 @@ Ready to Start
 
 
 
+Footer
+
+
+
+
+
+
+*/
+
+footer {
+  background: #1b262f;
+  padding: 2rem 0;
+  width: 100%;
+}
+footer .footer-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+footer .footer-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footer-logo {
+  filter: invert(87%) sepia(27%) saturate(12%) hue-rotate(182deg)
+    brightness(107%) contrast(100%);
+}
+footer .footer-content ul li a {
+  color: #fbfcfe;
+  padding: 0 1rem;
+  transition: opacity 0.3s ease-in-out;
+}
+footer .footer-content ul li a:hover {
+  opacity: 0.9;
+}
+
+/* 
+
+
+
+
+
+
+
 Media Queries
 
 
@@ -704,8 +753,33 @@ Smartphone Landscape
     margin: auto;
     width: 70%;
   }
-}
 
+  footer {
+    min-width: 100%;
+  }
+
+  footer .footer-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footer-content ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    filter: invert(87%) sepia(27%) saturate(12%) hue-rotate(182deg)
+      brightness(107%) contrast(100%);
+  }
+  footer .footer-content ul li a {
+    color: #fbfcfe;
+    padding: 0 0.5rem;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
 /* 
 
 
@@ -995,5 +1069,24 @@ Smartphone Portrait
     border-radius: 24px;
     box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25);
     margin-left: -9rem;
+  }
+
+  footer .footer-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+  }
+  footer .footer-content ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+  }
+  .footer-content ul li a {
+    padding: 0 2rem;
   }
 }
