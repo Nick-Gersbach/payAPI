@@ -633,9 +633,7 @@ Tablet
 
 @media only screen and (max-width: 1024px) {
   header {
-    background-image: url(./img/desktop/bg-pattern-circle.svg);
-    background-repeat: no-repeat;
-    background-position: 50vw -34vh;
+    background-image: none;
   }
 
   #header-showcase {
@@ -771,9 +769,7 @@ Smartphone Landscape
 
 @media only screen and (max-width: 968px) {
   header {
-    background-image: url(./img/desktop/bg-pattern-circle.svg);
-    background-repeat: no-repeat;
-    background-position: -1vw -33vh;
+    background-image: none;
   }
 
   header nav {
