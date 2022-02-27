@@ -51,6 +51,18 @@ p {
   color: #36536b;
 }
 
+.page-heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 56px;
+  color: #36536b;
+  margin-top: 5rem;
+  padding-left: 11.5rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 /* 
 
 
@@ -504,6 +516,87 @@ footer ul li a:hover {
   filter: invert(87%) sepia(27%) saturate(12%) hue-rotate(182deg)
     brightness(107%) contrast(100%);
 }
+
+/* 
+
+
+
+
+
+Pricing Page
+
+
+
+
+*/
+
+#pricing {
+  width: 85%;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5rem;
+}
+#pricing .text-and-price h3 {
+  font-family: "DM Serif Display", serif;
+  color: #ba4270;
+  font-size: 32px;
+  padding-bottom: 0.8rem;
+}
+#pricing .text-and-price p {
+  width: 85%;
+  padding-bottom: 0.8rem;
+}
+
+.price {
+  font-family: "DM Serif Display", serif;
+  color: #36536b;
+  font-size: 56px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature img {
+  padding-right: 15px;
+}
+
+.feature p {
+  margin-top: 10px;
+}
+
+.divider {
+  border-bottom: 1px solid #6c8294;
+  width: 250px;
+  opacity: 0.9;
+}
+
+.request-access-btn-container {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.request-access-btn {
+  border: 1px solid #36536b;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 24px;
+  color: #36536b;
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.request-access-btn:hover {
+  background: #36536b;
+  color: #fbfcfe;
+}
 /* 
 
 
@@ -539,9 +632,6 @@ Tablet
 */
 
 @media only screen and (max-width: 1024px) {
-  * {
-    border: 1px solid red;
-  }
   header {
     background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
@@ -651,6 +741,15 @@ Tablet
     margin: 0 auto;
     width: 65%;
   }
+
+  #pricing {
+    padding-left: 0rem;
+  }
+
+  .page-heading {
+    text-align: center;
+    padding-left: 0;
+  }
 }
 
 /* 
@@ -671,9 +770,6 @@ Smartphone Landscape
 */
 
 @media only screen and (max-width: 968px) {
-  * {
-    border: 1px solid red;
-  }
   header {
     background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
@@ -775,6 +871,15 @@ Smartphone Landscape
   footer ul li a {
     padding: 0 10px;
   }
+
+  #pricing {
+    padding-left: 0rem;
+    flex-direction: column;
+  }
+
+  #pricing .text-and-price h3 {
+    padding-top: 2rem;
+  }
 }
 /* 
 
@@ -794,9 +899,6 @@ Smartphone Portrait
 */
 
 @media only screen and (max-width: 600px) {
-  * {
-    border: 1px solid red;
-  }
   .mobile-nav-logo {
     display: block;
     position: absolute;
@@ -1088,5 +1190,72 @@ Smartphone Portrait
     padding: 0 8px;
     color: #fbfcfe;
     transition: opacity 0.3s ease-in-out;
+  }
+  #pricing {
+    width: 85%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5rem;
+  }
+  #pricing .text-and-price h3 {
+    font-family: "DM Serif Display", serif;
+    color: #ba4270;
+    font-size: 32px;
+    padding-bottom: 0.8rem;
+  }
+  #pricing .text-and-price p {
+    width: 85%;
+    padding-bottom: 0.8rem;
+  }
+
+  .price {
+    font-family: "DM Serif Display", serif;
+    color: #36536b;
+    font-size: 56px;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature img {
+    padding-right: 15px;
+  }
+
+  .feature p {
+    margin-top: 10px;
+  }
+
+  .divider {
+    border-bottom: 1px solid #6c8294;
+    width: 250px;
+    opacity: 0.9;
+  }
+
+  .request-access-btn-container {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .request-access-btn {
+    border: 1px solid #36536b;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 24px;
+    color: #36536b;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .request-access-btn:hover {
+    background: #36536b;
+    color: #fbfcfe;
   }
 }
