@@ -479,35 +479,39 @@ Footer
 */
 
 footer {
-  background: #1b262f;
-  padding: 2rem 0;
-  width: 100%;
-}
-footer .footer-content {
-  width: 100%;
+  background-color: #1b262f;
+  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
+  width: 100%;
 }
-footer .footer-content ul {
+
+footer ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
+}
+footer ul li a {
+  padding: 0 8px;
+  color: #fbfcfe;
+  transition: opacity 0.3s ease-in-out;
+}
+footer ul li a:hover {
+  opacity: 0.8;
+}
+
+.footer-nav {
+  padding-left: 2rem;
+}
+
+.footer-icons {
+  padding-right: 2rem;
 }
 
 .footer-logo {
   filter: invert(87%) sepia(27%) saturate(12%) hue-rotate(182deg)
     brightness(107%) contrast(100%);
-}
-footer .footer-content ul li a {
-  color: #fbfcfe;
-  padding: 0 1rem;
-  transition: opacity 0.3s ease-in-out;
-}
-footer .footer-content ul li a:hover {
-  opacity: 0.9;
 }
 
 /* 
@@ -708,6 +712,7 @@ Smartphone Landscape
 
   #who-we-work-with {
     height: 700px;
+    width: 115%;
     background-image: url(./img/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: -2vw -53vh;
@@ -753,31 +758,8 @@ Smartphone Landscape
     margin: auto;
     width: 70%;
   }
-
   footer {
-    min-width: 100%;
-  }
-
-  footer .footer-content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  footer .footer-content ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .footer-logo {
-    filter: invert(87%) sepia(27%) saturate(12%) hue-rotate(182deg)
-      brightness(107%) contrast(100%);
-  }
-  footer .footer-content ul li a {
-    color: #fbfcfe;
-    padding: 0 0.5rem;
-    transition: opacity 0.3s ease-in-out;
+    width: 115%;
   }
 }
 /* 
@@ -1071,22 +1053,31 @@ Smartphone Portrait
     margin-left: -9rem;
   }
 
-  footer .footer-content {
+  footer {
+    justify-content: center;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
     flex-direction: column;
   }
-  footer .footer-content ul {
-    display: flex;
-    align-items: center;
+
+  footer ul {
     justify-content: center;
-    margin: auto;
     flex-direction: column;
+    padding: 10px 0;
   }
-  .footer-content ul li a {
-    padding: 0 2rem;
+  footer ul li {
+    padding: 10px 0;
+  }
+
+  .footer-nav {
+    padding-left: 0rem;
+  }
+
+  .footer-icons {
+    padding-right: 0rem;
+  }
+
+  .footer-logo {
+    filter: invert(87%) sepia(27%) saturate(12%) hue-rotate(182deg)
+      brightness(107%) contrast(100%);
   }
 }
