@@ -683,6 +683,69 @@ About Page
   letter-spacing: 4px;
   text-align: center;
 }
+
+/* 
+
+
+
+
+
+
+
+Contact Page
+
+
+
+
+
+
+*/
+
+#contact-form {
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  width: 40%;
+}
+#contact-form form input {
+  border: none;
+  background: #eef3f9;
+  padding: 25px;
+  color: #36536b;
+  width: 60%;
+}
+#contact-form form textarea {
+  border: none;
+  background: #eef3f9;
+  padding: 15px;
+  color: #36536b;
+  width: 60%;
+  resize: none;
+  height: 150px;
+}
+
+.form-control {
+  border-bottom: 1px solid #6c8294;
+}
+
+.form-submit-btn {
+  margin-top: 3rem;
+  background: #eef3f9;
+  color: #36536b;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 24px;
+  border: 1px solid #36536b;
+  width: 140px;
+  transition: all 0.3s ease-in-out;
+}
+.form-submit-btn:hover {
+  cursor: pointer;
+  background: #36536b;
+  color: #fbfcfe;
+}
+
 /* 
 
 
@@ -1055,6 +1118,16 @@ Smartphone Landscape
 
   #about-banner {
     margin-top: 3rem;
+  }
+
+  #contact-form {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 50%;
+  }
+
+  .submit-btn-container {
+    text-align: center;
   }
 }
 /* 
@@ -1456,5 +1529,15 @@ Smartphone Portrait
 
   .number {
     padding: 2rem 0;
+  }
+
+  #contact-form {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+
+  #contact-form form textarea {
+    height: 120px;
   }
 }
