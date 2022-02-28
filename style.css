@@ -597,6 +597,32 @@ Pricing Page
   background: #36536b;
   color: #fbfcfe;
 }
+
+/* 
+
+
+
+
+
+
+
+About Page
+
+
+
+
+
+
+*/
+
+.about-heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 56px;
+  color: #36536b;
+  width: 60%;
+  padding-left: 10rem;
+  padding-top: 5rem;
+}
 /* 
 
 
@@ -747,6 +773,13 @@ Tablet
   .page-heading {
     text-align: center;
     padding-left: 0;
+  }
+
+  .about-heading {
+    width: 80%;
+    padding-left: 0rem;
+    margin: auto;
+    text-align: center;
   }
 }
 
@@ -1298,5 +1331,10 @@ Smartphone Portrait
   .request-access-btn:hover {
     background: #36536b;
     color: #fbfcfe;
+  }
+
+  .about-heading {
+    width: 80%;
+    font-size: 32px;
   }
 }
