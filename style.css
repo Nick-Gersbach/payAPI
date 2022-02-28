@@ -958,7 +958,7 @@ Smartphone Landscape
     justify-content: center;
   }
   footer ul li a {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   #pricing {
@@ -1353,17 +1353,19 @@ Smartphone Portrait
     background: #1b262f;
     padding: 3rem 4rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   footer ul {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
   }
+
   footer ul li {
-    padding: 0 10px;
+    padding: 5px 0px;
   }
+
   footer ul li a {
-    padding: 0 8px;
     color: #fbfcfe;
     transition: opacity 0.3s ease-in-out;
   }
