@@ -77,10 +77,15 @@
         <div class="header-showcase-text">
           <h1>Start building with our APIs for absolutely free.</h1>
           <form>
-            <input type="email" placeholder="Enter Email address" />
-            <button>Schedule a Demo</button>
+            <input
+              id="email-input"
+              type="email"
+              placeholder="Enter Email address"
+            />
+            <button id="submit" type="submit">Schedule a Demo</button>
           </form>
           <p>Have any questions? <a href="#">Contact Us</a></p>
+          <small>Email can't be empty</small>
         </div>
         <div class="header-showcase-img">
           <img src="./img/desktop/illustration-phone-mockup.svg" alt="" />
@@ -192,7 +197,9 @@
           class="ready-to-start-input"
           type="email"
           placeholder="Enter Email address"
+          required;
         />
+        <small>Email can't be empty</small>
         <button type="submit" id="submit" class="ready-to-start-btn">
           Schedule a Demo
         </button>

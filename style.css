@@ -66,6 +66,7 @@ p {
 small {
   color: red;
   visibility: hidden;
+  font-size: 12px;
 }
 
 /* 
