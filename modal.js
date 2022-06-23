@@ -5,7 +5,8 @@ const closeModal = document.querySelector(".x-icon");
 // pricingPage.addEventListener("mouseleave", displayModal);
 closeModal.addEventListener("click", modalClose);
 
-setTimeout(displayModal, 5000);
+//Show modal after 5 seconds
+setTimeout(displayModal, 3000);
 
 function displayModal() {
   pricingPage.classList.add("dark-bg");

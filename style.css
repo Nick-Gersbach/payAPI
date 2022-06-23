@@ -1182,6 +1182,37 @@ Smartphone Landscape
   .submit-btn-container {
     text-align: center;
   }
+
+  #email-modal {
+    width: 95%;
+    height: 400px;
+    text-align: center;
+  }
+
+  .x-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .modal-logo {
+    padding-bottom: 3rem;
+  }
+
+  #email-modal h2 {
+    padding-bottom: 1.5rem;
+  }
+
+  #email-modal h3 {
+    padding-bottom: 1.5rem;
+  }
+
+  #email-modal input {
+    padding: 7px;
+    width: 250px;
+    border: none;
+  }
 }
 /* 
 
