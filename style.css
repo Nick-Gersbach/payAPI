@@ -69,6 +69,68 @@ small {
 
 
 
+Email Modal
+
+
+
+
+
+
+*/
+
+.dark-bg {
+  background: linear-gradient(rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.9));
+}
+
+#email-modal {
+  background-color: #eef3f9;
+  width: 800px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  color: #36536b;
+  display: none;
+}
+
+.x-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.modal-logo {
+  padding-bottom: 3rem;
+}
+
+#email-modal h2 {
+  padding-bottom: 1.5rem;
+}
+
+#email-modal h3 {
+  padding-bottom: 1.5rem;
+}
+
+#email-modal input {
+  padding: 7px;
+  width: 400px;
+  border: none;
+}
+
+/* 
+
+
+
+
+
+
+
 Header
 
 

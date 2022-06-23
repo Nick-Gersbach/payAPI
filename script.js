@@ -16,7 +16,7 @@ document
 document
   .querySelector(".close-menu")
   .addEventListener("click", () =>
-    document.querySelector(".mobile-nav").classList.remove("show")
+    document.querySelector(".mobile-nav").classList.removexxx("show")
   );
 
 function sendEmail(e) {
