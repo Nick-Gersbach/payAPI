@@ -1,10 +1,10 @@
 // Form Validation Vars
-const submitEmailBtn = document.getElementById("submit");
+const form = document.querySelector("form");
 const emailInput = document.getElementById("email-input");
 const errorText = document.querySelector("small");
 
 //Event Listeners
-submitEmailBtn.addEventListener("click", sendEmail);
+form.addEventListener("click", sendEmail);
 
 // Mobile Nav
 document
